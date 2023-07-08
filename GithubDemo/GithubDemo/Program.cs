@@ -4,9 +4,19 @@
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 100; i++)
+            int inputNumber;
+            while (!int.TryParse(Console.ReadLine(), out inputNumber))
             {
-                Console.WriteLine(i);
+                break;
+            }
+
+            if (inputNumber >= 0)
+            {
+                Console.WriteLine("Positive!");
+            }
+            else
+            {
+                Console.WriteLine("Negative");
             }
         }
     }
