@@ -10,13 +10,13 @@
                 break;
             }
 
-            if (inputNumber >= 0)
+            if (inputNumber % 2 == 0)
             {
-                Console.WriteLine("Positive!");
+                Console.WriteLine("Even!");
             }
             else
             {
-                Console.WriteLine("Negative");
+                Console.WriteLine("Odd");
             }
         }
     }
