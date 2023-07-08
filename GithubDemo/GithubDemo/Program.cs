@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            int inputNumber = int.Parse(Console.ReadLine());
+            int inputNumber;
+            while (!int.TryParse(Console.ReadLine(), out inputNumber))
+            {
+                break;
+            }
 
             if (inputNumber >= 0)
             {
