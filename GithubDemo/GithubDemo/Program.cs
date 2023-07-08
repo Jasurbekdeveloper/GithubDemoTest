@@ -9,14 +9,14 @@
             {
                 break;
             }
-
-            if (inputNumber >= 0)
+            
+            if (Math.Abs(inputNumber) % 2 == 0)
             {
-                Console.WriteLine("Positive!");
+                Console.WriteLine("Even!");
             }
             else
             {
-                Console.WriteLine("Negative");
+                Console.WriteLine("Odd");
             }
         }
     }
