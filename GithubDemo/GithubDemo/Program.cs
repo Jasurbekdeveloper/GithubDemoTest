@@ -10,6 +10,11 @@
                 break;
             }
 
+            if (number < 0)
+            {
+                number *= -1;
+            }
+
             if (inputNumber % 2 == 0)
             {
                 Console.WriteLine("Even!");
